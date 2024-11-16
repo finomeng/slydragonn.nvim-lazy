@@ -12,10 +12,10 @@ map("n", "<leader>w", "<CMD>update<CR>")
 map("n", "<leader>q", "<CMD>q<CR>")
 
 -- Exit insert mode
-map("i", "jk", "<ESC>")
+-- map("i", "jk", "<ESC>")
 
 -- NeoTree
-map("n", "<leader>e", "<CMD>Neotree toggle<CR>")
+map("n", "<leader>t", "<CMD>Neotree toggle<CR>")
 map("n", "<leader>r", "<CMD>Neotree focus<CR>")
 
 -- New Windows

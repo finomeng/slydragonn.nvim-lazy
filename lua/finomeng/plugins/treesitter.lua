@@ -34,6 +34,11 @@ return {
 				"gitignore",
 				"c",
 				"rust",
+                "cmake",
+                "cpp",
+                "go",
+                "toml",
+                "v",
 			},
 			incremental_selection = {
 				enable = true,

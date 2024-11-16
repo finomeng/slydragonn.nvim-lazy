@@ -23,3 +23,8 @@ o.inccommand = "split"
 o.splitright = true
 o.splitbelow = true
 o.termguicolors = true
+
+-- by fino
+
+o.hlsearch = true
+o.listchars = {tab = "▸ ", trail = "·"}
