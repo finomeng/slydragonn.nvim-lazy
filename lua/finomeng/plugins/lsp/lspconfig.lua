@@ -32,12 +32,6 @@ return {
 					capabilities = capabilities,
 				})
 			end,
-			["ts_ls"] = function()
-				nvim_lsp["ts_ls"].setup({
-					on_attach = on_attach,
-					capabilities = capabilities,
-				})
-			end,
 			["cssls"] = function()
 				nvim_lsp["cssls"].setup({
 					on_attach = on_attach,
@@ -62,26 +56,20 @@ return {
 					capabilities = capabilities,
 				})
 			end,
-			["eslint"] = function()
-				nvim_lsp["eslint"].setup({
-					on_attach = on_attach,
+      ["clangd"] = function()
+        nvim_lsp["clangd"].setup({
+           cmd = {'clangd', '--background-index', '--clang-tidy', '--log=verbose'},
+           init_options = {
+             fallbackFlags = { '-std=c++17' },
+            },
+        })
+      end,
+      ["v-analyzer"]= function()
+        nvim_lsp["v-analyzer"].setup({
+	        on_attach = on_attach,
 					capabilities = capabilities,
-				})
-			end,
-			["pyright"] = function()
-				nvim_lsp["pyright"].setup({
-					on_attach = on_attach,
-					capabilities = capabilities,
-				})
-			end,
-            ["clangd"] = function()
-                nvim_lsp["clangd"].setup({
-                    cmd = {'clangd', '--background-index', '--clang-tidy', '--log=verbose'},
-                    init_options = {
-                        fallbackFlags = { '-std=c++17' },
-                    },
-                })
-            end,
+        })
+      end,
 		})
 	end,
 }

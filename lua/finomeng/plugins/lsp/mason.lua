@@ -42,10 +42,12 @@ return {
                 "lua-language-server",
                 "html-lsp",
                 "css-lsp",
+                "tailwindcss-language-server",
                 "css-variables-language-server",
                 "cssmodules-language-server",
+                "json-lsp",
                 "marksman",
-				"prettier",
+                "prettier",
                 "shellcheck",
                 "shellharden",
 				"stylua", -- lua formatter
