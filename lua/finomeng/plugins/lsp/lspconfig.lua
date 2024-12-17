@@ -1,6 +1,6 @@
 return {
 	"neovim/nvim-lspconfig",
-	event = { "BufReadPre", "BufNewFile" },
+	-- event = { "BufReadPre", "BufNewFile" },
 	dependencies = {
 		"hrsh7th/cmp-nvim-lsp",
 		{ "folke/neodev.nvim", opts = {} },
@@ -10,7 +10,9 @@ return {
 		local mason_lspconfig = require("mason-lspconfig")
 
 		local protocol = require("vim.lsp.protocol")
-
+		--[[
+		fino: most open source C project don't follow clang-format's style,
+		      auto format just make git status into mass.
 		local on_attach = function(client, bufnr)
 			-- format on save
 			if client.server_capabilities.documentFormattingProvider then
@@ -23,6 +25,7 @@ return {
 				})
 			end
 		end
+		--]]
 
 		local capabilities = require("cmp_nvim_lsp").default_capabilities()
 

@@ -34,8 +34,6 @@ return {
 		require("mason-tool-installer").setup({
 			ensure_installed = {
                 "ast-grep",
-                "clang-format",
-                "cpplint",
                 "clangd",
                 "v-analyzer",
                 "glow",
@@ -50,7 +48,7 @@ return {
                 "prettier",
                 "shellcheck",
                 "shellharden",
-				"stylua", -- lua formatter
+		"stylua", -- lua formatter
 			},
 		})
 	end,
