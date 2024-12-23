@@ -28,3 +28,10 @@ o.termguicolors = true
 
 o.hlsearch = true
 o.listchars = {tab = "▸ ", trail = "·"}
+-- :set nornu nonu
+o.relativenumber = false
+o.number = false
+-- 
+-- vim.diagnostic.config({virtual_text = false})
+-- vim.diagnostic.config({signs = false})
+vim.diagnostic.enable(false)

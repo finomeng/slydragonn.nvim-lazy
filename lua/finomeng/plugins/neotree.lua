@@ -8,7 +8,7 @@ return {
 		-- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
 	},
     enabled = true,
-    lazy = true,
+    lazy = false,
     cmd = "Neotree",
     keys = {
         { '\\', ':Neotree reveal<CR>:set relativenumber<CR>', desc = 'NeoTree reveal', silent = true },
@@ -16,7 +16,7 @@ return {
     opts = {
       filesystem = {
         window = {
-          position = "right",
+          position = "left",
           mappings = {
             ['\\'] = 'close_window',
           },
